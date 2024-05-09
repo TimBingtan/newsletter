@@ -10,6 +10,9 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -18,7 +21,8 @@
 </head>
 <body>
   <div class="page-block">
-        <!-- Sign-up form start -->
+    <div class="form">
+              <!-- Sign-up form start -->
     <h1>Stay updated!</h1>
 
     <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -28,10 +32,15 @@
       <li>And much more!</li>
     </ul>
 
-    <p>Email address</p>
-    <!-- email@company.com
+    <form>
+      <label for="email">Email address</label>
+      <input type="text" id="email" name="email">
+      <!-- email@company.com -->
+    </form>
+    
+    <button type="button" onclick="">Subscribe to monthly newsletter</button>
 
-  Subscribe to monthly newsletter -->
+  
 
   <!-- Sign-up form end -->
 
@@ -43,7 +52,16 @@
   Please open it and click the button inside to confirm your subscription.
 
   Dismiss message -->
-  </div>
+    </div>
+
+    <div class="image-col">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign Up Here"> 
+    </div>
+
+
+
+
+</div>
 
 
   <!-- Success message end -->
