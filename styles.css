@@ -1,0 +1,14 @@
+body {
+    background-color: #36384D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page-block {
+    background-color: #FFFFFF;
+    color: #242742;
+    width: 928px;
+    height: 641px;
+}
