@@ -32,8 +32,42 @@ body {
     align-items: center;
 }
 
+.li {
+    margin-bottom: 1px;
+}
+
+p {
+    display: flex;
+}
+
+span {
+    margin-left: 10px;
+}
 
 input, label {
     display: block;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 98%;
+}
+
+form {
+    margin-top: 40px;
+}
+
+button {
+    background-color: hsl(4, 100%, 67%);
+    margin-top: 24px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
 }
 
