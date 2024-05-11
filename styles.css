@@ -7,8 +7,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.page-block {
+.card {
     background-color: #FFFFFF;
+    border-radius: 36px;
     color: #242742;
     width: 928px;
     height: 641px;
@@ -27,3 +28,4 @@ body {
 input, label {
     display: block;
 }
+
