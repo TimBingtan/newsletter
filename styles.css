@@ -7,13 +7,21 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.page-block {
+.card {
     background-color: #FFFFFF;
+    border-radius: 36px;
     color: #242742;
     width: 928px;
     height: 641px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.content {
+    width: 376px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -24,6 +32,42 @@ body {
     align-items: center;
 }
 
+.li {
+    margin-bottom: 1px;
+}
+
+p {
+    display: flex;
+}
+
+span {
+    margin-left: 10px;
+}
+
 input, label {
     display: block;
 }
+
+label {
+    font-weight: bold;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.form-item {
+    width: 100%;
+    height: 56px;
+    padding: 0;
+}
+
+button {
+    background-color: hsl(4, 100%, 67%);
+    margin-top: 24px;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
