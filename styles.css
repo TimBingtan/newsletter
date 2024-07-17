@@ -59,6 +59,11 @@ input:hover {
     transition: 0.3s;
 }
 
+input:focus {
+    opacity: 100%;
+    transition: 0.3s;
+}
+
 label {
     font-weight: bold;
 }
