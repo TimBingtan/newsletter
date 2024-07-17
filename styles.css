@@ -54,6 +54,11 @@ input {
     margin-top: 8px;
 }
 
+input:hover {
+    opacity: 100%;
+    transition: 0.3s;
+}
+
 label {
     font-weight: bold;
 }
@@ -69,11 +74,20 @@ form {
 }
 
 button {
-    background-color: hsl(4, 100%, 67%);
+    background-color: hsl(234, 29%, 20%);
     margin-top: 24px;
     color: hsl(0, 0%, 100%);
     font-weight: bold;
     border: none;
     border-radius: 8px;
+    transition: 0.5s;
+}
+
+/* Limited to do gradient transition. Solution: place pseudo element in z-index right behind
+button, then bring up element on hover*/
+/* Position: */ 
+
+button:hover {
+    background: linear-gradient(180deg, #FF6A3A, #FF527B); 
 }
 
