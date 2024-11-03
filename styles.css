@@ -11,15 +11,16 @@ body {
     background-color: #FFFFFF;
     border-radius: 36px;
     color: #242742;
-    width: 928px;
     height: 641px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .content {
     width: 376px;
+    padding-left: 44px;
+    padding-right: 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +44,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 376px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 
 .li {
@@ -103,7 +107,6 @@ label {
 }
 
 button {
-    background-color: hsl(234, 29%, 20%);
     margin-top: 24px;
     color: hsl(0, 0%, 100%);
     font-weight: bold;
@@ -113,11 +116,31 @@ button {
     font-size: 14px;
 }
 
+.btn-1 {
+    background-color: hsl(234, 29%, 20%);
+    position: relative;
+    z-index: 0;
+}
+
+.btn-2 {
+    background: linear-gradient(180deg, #FF6A3A, #FF527B); 
+    position: relative;
+    z-index: 1;
+    top: -80px;
+    opacity: 0%;
+}
+
 /* Limited to do gradient transition. Solution: place pseudo element in z-index right behind
 button, then bring up element on hover*/
-/* Position: */ 
 
-button:hover {
-    background: linear-gradient(180deg, #FF6A3A, #FF527B); 
+.btn-2:hover {
+    opacity: 100%;
+    transition: 0.3s;
 }
+
+.success-message {
+    display: none;
+}
+
+
 
