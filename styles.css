@@ -11,7 +11,6 @@ body {
     background-color: #FFFFFF;
     border-radius: 36px;
     color: #242742;
-    width: 928px;
     height: 641px;
     display: flex;
     flex-direction: row;
@@ -20,6 +19,8 @@ body {
 
 .content {
     width: 376px;
+    padding-left: 44px;
+    padding-right: 44px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +44,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 376px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 
 .li {
@@ -135,8 +139,7 @@ button, then bring up element on hover*/
 }
 
 .success-message {
-    position: absolute;
-    visibility: hidden;
+    display: none;
 }
 
 

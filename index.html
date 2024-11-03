@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class="card">
-    <div class="content">
+    <div class="content initial">
     
     <!-- Sign-up form start -->
     <div class="sign-up-prompt">
@@ -32,33 +32,33 @@
     <p class="li"><img class="icon" src="./assets/images/icon-list.svg"> <span>Measuring to ensure updates are a success</span></p>
     <p class="li"><img class="icon" src="./assets/images/icon-list.svg"> <span>And much more!</span></p>
 
-    <form>
+    <form id="userForm">
       <label for="email">Email address</label>
       <input class="form-item text-field" type="text" id="email" name="email" placeholder="email@company.com">
+      <button class="form-item btn-1" type="button">Subscribe to monthly newsletter</button>
+      <button class="form-item btn-2" type="submit">Subscribe to monthly newsletter</button>
     </form>
     
-    <button class="form-item btn-1" type="button" onclick="">Subscribe to monthly newsletter</button>
-    <button class="form-item btn-2" type="button" onclick="">Subscribe to monthly newsletter</button>
+    
     </div>
     <!-- Sign-up form end -->
 
-  <!-- Success message start -->
-  <div class="success-message">
-  <h1 class="heading">Thanks for subscribing!</h1>
-
-  <p>A confirmation email has been sent to ash@loremcompany.com. 
-    Please open it and click the button inside to confirm your subscription.</p>
-
-  <button>Dismiss message</button>
-  </div>
-  <!-- Success message end -->
-
-
   </div> 
 
-    <div class="image-col">
+    <div class="image-col initial">
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign Up Here"> 
     </div>
+
+      <!-- Success message start -->
+  <div id="successMessage" class="success-message">
+    <h1 class="heading">Thanks for subscribing!</h1>
+  
+    <p>A confirmation email has been sent to ash@loremcompany.com. 
+      Please open it and click the button inside to confirm your subscription.</p>
+  
+    <button>Dismiss message</button>
+    </div>
+    <!-- Success message end -->
 
 </div>
 
@@ -68,5 +68,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="script.js"></script>
 </body>
 </html>
