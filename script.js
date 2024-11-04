@@ -2,7 +2,7 @@ document.getElementById("userForm").addEventListener("submit", function(event){
     event.preventDefault();
 
     const email = document.getElementById('email').value;
-    document.getElementById('successMessageText').textContent = `A confirmation email has been sent to ${email}. Please open it and click the button inside to confirm your subscription.`
+    document.getElementById('submittedEmail').textContent = email;
 
     const elements = document.querySelectorAll(".initial");
     elements.forEach(element => {
