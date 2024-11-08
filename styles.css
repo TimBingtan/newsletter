@@ -142,5 +142,9 @@ button, then bring up element on hover*/
     display: none;
 }
 
+#submittedEmail {
+    margin-left: 0;
+    font-weight: bold;
+}
 
 
