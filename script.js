@@ -3,6 +3,8 @@ document.getElementById("userForm").addEventListener("submit", function(event){
 
     const email = document.getElementById('email').value;
     document.getElementById('submittedEmail').textContent = email;
+    
+    document.getElementById('email').value = "";
 
     const elements = document.querySelectorAll(".initial");
     elements.forEach(element => {
@@ -11,6 +13,19 @@ document.getElementById("userForm").addEventListener("submit", function(event){
 
     document.getElementById("successMessage").style.display = "block";
 });
+
+
+document.getElementById("dismiss-btn").addEventListener("click", function(event){
+    event.preventDefault();
+
+    document.getElementById("successMessage").style.display = "none";
+
+    const elements = document.querySelectorAll(".initial");
+    elements.forEach(element => {
+        element.style.display = "flex";
+    });
+});
+
 
 
 
