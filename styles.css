@@ -140,11 +140,13 @@ button, then bring up element on hover*/
 
 .success-message {
     display: none;
+    width: 504px;
+    padding: 50px;
 }
 
-#submittedEmail {
-    margin-left: 0;
+#submittedEmail { 
     font-weight: bold;
+    display: inline;
 }
 
 
