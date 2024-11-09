@@ -138,6 +138,10 @@ button, then bring up element on hover*/
     transition: 0.3s;
 }
 
+.large-icon {
+    width: 85px;
+}
+
 .success-message {
     display: none;
     width: 504px;
