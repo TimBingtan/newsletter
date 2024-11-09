@@ -136,6 +136,7 @@ button, then bring up element on hover*/
 .btn-2:hover {
     opacity: 100%;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .large-icon {
