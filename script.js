@@ -5,13 +5,12 @@ document.getElementById("userForm").addEventListener("submit", function(event){
     var validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (!email.match(validEmail)){
-        console.log('got here');
-        document.getElementById('email').color = "#FF6155";
-        document.getElementById('email').borderColor = "#FF6155";
-        document.getElementById('email').backgroundColor = "hsla(0, 100%, 50%, 0.15)";
-        document.getElementById('email').outline = 0;
-        document.getElementById('errorMessage').visibility = "visible";
-        console.log('got here as well');
+        document.getElementById('email').style.color = "#FF6155";
+        document.getElementById('email').style.borderColor = "#FF6155";
+        document.getElementById('email').style.backgroundColor = "hsla(0, 100%, 50%, 0.15)";
+        document.getElementById('email').style.outline = 0;
+        document.getElementById('email').style.opacity = "100%";
+        document.getElementById('errorMessage').style.visibility = "visible";
     } else { 
         document.getElementById('confirmationMessage').innerHTML = `A confirmation email has been sent to ${email}. Please open it and click the button inside to confirm your subscription.`;
         
@@ -29,6 +28,13 @@ document.getElementById("userForm").addEventListener("submit", function(event){
 
 document.getElementById("dismiss-btn").addEventListener("click", function(event){
     event.preventDefault();
+
+    document.getElementById('email').style.color = "initial";
+    document.getElementById('email').style.borderColor = "initial";
+    document.getElementById('email').style.backgroundColor = "initial";
+    document.getElementById('email').style.outline = "initial";
+    // document.getElementById('email').style.opacity = "40%";
+    document.getElementById('errorMessage').style.visibility = "hidden";
 
     document.getElementById("successMessage").style.display = "none";
 
