@@ -61,14 +61,21 @@ span {
     margin-left: 10px;
 }
 
-input, label {
-    display: block;
+label {
+    display: inline;
+    font-weight: bold;
 }
 
 input {
+    display: block;
     color: #19182B;
-    opacity: 25%;
+    /* color: #FF6155; */
+    opacity: 40%;
     margin-top: 8px;
+    border-style: solid;
+    /* border-color: #FF6155;
+    background-color: hsla(0, 100%, 50%, 0.15);
+    outline: 0 !important; */
 }
 
 input:hover {
@@ -81,8 +88,10 @@ input:focus {
     transition: 0.3s;
 }
 
-label {
-    font-weight: bold;
+#errorMessage {
+    color: #FF6155;
+    margin-left: 50%;
+    visibility: hidden;
 }
 
 form {
