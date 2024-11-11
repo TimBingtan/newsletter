@@ -79,14 +79,14 @@ input {
 }
 
 input:hover {
-    opacity: 100%;
-    transition: 0.3s;
+    opacity: 100% !important;
+    transition: 0.3s !important;
 }
 
 input:focus {
-    opacity: 100%;
-    transition: 0.3s;
-}
+    opacity: 100% !important;;
+    transition: 0.3s !important;;
+} 
 
 #errorMessage {
     color: #FF6155;
