@@ -69,13 +69,9 @@ label {
 input {
     display: block;
     color: #19182B;
-    /* color: #FF6155; */
     opacity: 40%;
     margin-top: 8px;
     border-style: solid;
-    /* border-color: #FF6155;
-    background-color: hsla(0, 100%, 50%, 0.15);
-    outline: 0 !important; */
 }
 
 input:hover {
@@ -84,8 +80,8 @@ input:hover {
 }
 
 input:focus {
-    opacity: 100% !important;;
-    transition: 0.3s !important;;
+    opacity: 100% !important;
+    transition: 0.3s !important;
 } 
 
 #errorMessage {

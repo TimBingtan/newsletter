@@ -1,30 +1,3 @@
-const email = document.getElementById('email');
-// let error = false;
-
-// email.addEventListener("mouseover", function(){
-//     if (!error) {
-//         email.style.opacity = "100%"
-//         email.style.transition = "0.3s";
-//     }
-// });
-
-// email.addEventListener("mouseout", function(){
-//     email.style.opacity = "40%"
-//     email.style.transition = "0.3s";
-// });
-
-// email.addEventListener("focus", function(){
-//     if (!error) {
-//         email.style.opacity = "100%"
-//         email.style.transition = "0.3s";
-//     }
-// });
-
-// // email.addEventListener("blur", function(){
-// //     email.style.opacity = "40%"
-// //     email.style.transition = "0.3s";
-// // });
-
 document.getElementById("userForm").addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -32,7 +5,6 @@ document.getElementById("userForm").addEventListener("submit", function(event){
     var validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (!email.match(validEmail)){
-        // error = true;
         document.getElementById('email').style.color = "#FF6155";
         document.getElementById('email').style.borderColor = "#FF6155";
         document.getElementById('email').style.backgroundColor = "hsla(0, 100%, 50%, 0.15)";
@@ -56,8 +28,6 @@ document.getElementById("userForm").addEventListener("submit", function(event){
 
 document.getElementById("dismiss-btn").addEventListener("click", function(event){
     event.preventDefault();
-
-    // error = false;
 
     document.getElementById('email').style.color = "initial";
     document.getElementById('email').style.borderColor = "initial";
