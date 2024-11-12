@@ -155,6 +155,10 @@ button, then bring up element on hover*/
     padding: 50px;
 }
 
+.confirmation-message {
+    display: inline;
+}
+
 #submittedEmail { 
     font-weight: bold;
     display: inline;

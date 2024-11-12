@@ -12,8 +12,7 @@ document.getElementById("userForm").addEventListener("submit", function(event){
         document.getElementById('email').style.opacity = "100%";
         document.getElementById('errorMessage').style.visibility = "visible";
     } else { 
-        document.getElementById('confirmationMessage').innerHTML = `A confirmation email has been sent to ${email}. Please open it and click the button inside to confirm your subscription.`;
-        
+        document.getElementById('submittedEmail').innerHTML = email;
         document.getElementById('email').value = "";
     
         const elements = document.querySelectorAll(".initial");
